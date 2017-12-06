@@ -1,7 +1,7 @@
 ---
 layout: default
 img:
-category: Services
+category: Solutions
 title: ImmoChain
 description: |
 ---
