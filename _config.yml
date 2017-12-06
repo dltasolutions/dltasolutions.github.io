@@ -2,13 +2,13 @@
 #      Main Configs       #
 # ----------------------- #
 
-url:
+url: https://dltasolutions.github.io
 title: DLTA Solutions
 email: dltasolutions@outlook.com
 author: DLTA Solutions
-description: "BLOCKCHAINS & TECHNOLOGIES NUMÉRIQUES POUR L'AFRIQUE"
-copyright: '&copy; 2017 DLTA Solutions, Inc. All Rights Reserved.'
-credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
+description: ""
+copyright: '&copy; 2017 DLTA Solutions, Inc. Tous droits réservés.'
+credits: 'Site propulsé par Jekyll à partir du thème Bootstrap de <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
 
 # ----------------------- #
 #    Jekyll & Plugins     #
