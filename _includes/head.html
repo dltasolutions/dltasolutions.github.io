@@ -12,7 +12,11 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
+    {% if page.layout == 'home' %}
+        <link href="css/landing-page.css" rel="stylesheet">
+    {% else %}
+        <link href="css/page.css" rel="stylesheet">
+    {% endif %}
 
     <!-- Custom Fonts -->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
