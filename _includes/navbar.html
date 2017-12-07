@@ -8,8 +8,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-            </button>         
+            </button>
+            {% if page.layout == 'home' %}
             <a class="navbar-brand page-scroll" href="#home">{{ site.title }}</a>
+            {% else %}
+            <a class="navbar-brand page-scroll" href="{{ site.url }}">{{ site.title }}</a>
+            {% endif %}
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -21,10 +25,10 @@
                     <a class="page-scroll" href="/aidchain.html">AidChain</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="">Contact</a>
+                    <a class="page-scroll" href="#contact">Contact</a>
                 </li>		    
                 <li>
-                    <a class="page-scroll" href="">Blog</a>
+                    <a class="page-scroll" href="/blog">Blog</a>
                 </li>		    
             </ul>
         </div>
