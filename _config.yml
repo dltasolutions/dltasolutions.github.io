@@ -3,6 +3,7 @@
 # ----------------------- #
 
 url: https://dltasolutions.github.io
+baseurl: "/dltasolutions.github.io"
 title: DLTA Solutions
 email: dltasolutions@outlook.com
 author: DLTA Solutions
