@@ -18,6 +18,7 @@ credits: 'Site propulsé par Jekyll à partir du thème Bootstrap de <a href="ht
 # Build settings
 markdown: kramdown
 permalink: pretty
+paginate: 5
 
 # ----------------------- #
 #   3rd Party Settings    #
