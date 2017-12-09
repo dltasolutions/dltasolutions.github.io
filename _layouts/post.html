@@ -6,7 +6,7 @@ layout: default
 {% if page.background %}
 <div class="intro-header" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
 {% else %}
-<div class="intro-header">
+<div class="intro-header" style="background-color: black">
 {% endif %}
 	<div class="container">
 		<div class="row">
@@ -14,7 +14,7 @@ layout: default
 				<div class="intro-message">
 					<h2 class="">{{ page.title }}</h2>
 					<span class="meta">Publié par <a href="#">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a>, 
-					{{ page.date | date: '%B %d, %Y' }}</span>
+					&nbsp{{ page.date | date: '%B %d, %Y' }}</span>
 				</div>
 			</div>
 		</div>
