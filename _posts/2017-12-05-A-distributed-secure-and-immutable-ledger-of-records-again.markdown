@@ -2,8 +2,9 @@
 layout: post
 background:
 category:
-title: Blockchain
-subtitle: A distributed, secure and immutable ledger of records
+author: Youssef de Madeen Amadou
+tag:
+title: A distributed, secure and immutable ledger of records
 ---
 
 Dans cet article, j'explique comment utiliser R (ou tout autre programme que Java) pour faire du traitement distribué de données sur Hadoop. Pour moi qui n’ai jamais appris Java, cette idée est simplement géniale. La façon la plus simple d’y arriver, c’est avec l’API Streaming, lequel interprète des instructions de type Map et Reduce (séparément, comme nous le verrons) transmises dans un langage autre que Java (par exemple Ruby, Shell, etc.) et se charge de les exécuter comme une tâche typique MapReduce. 
