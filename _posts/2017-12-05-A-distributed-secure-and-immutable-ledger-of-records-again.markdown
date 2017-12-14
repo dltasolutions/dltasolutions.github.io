@@ -17,7 +17,7 @@ Pour commencer, nous avons besoin d’installer R sur le serveur ou la machine h
 yum install -y R
 {% endhighlight %}
  
-# L’API Streaming
+### L’API Streaming
 
 Comme je l’ai expliqué, Streaming se charge de traduire des instructions écrites dans un langage autre que Java, en une tâche typique MapReduce. L’API, disponible sur toutes les installations d’Hadoop, requiert un script au stade Map, un script au stade Reduce, un fichier de données à traiter, le nombre de fragmentations désirées pour la tâche, et un fichier pour stocker le rendu du traitement.
  
@@ -44,7 +44,7 @@ hadoop fs -cat /wc-r.result/*
 - `file wc.r` : l’argument **file** spécifie l’emplacement du fichier de script utilisé au stade Reduce. A supposer que nous ayons specifié un script R au stade Map, par exemple le fichier _wc_map.r_, il aurait fallu mettre `file wc.r wc_map.r`. Notez que ces emplacements se réfèrent au stockage du serveur ou la machine hôte, et non à HDFS.
 
  
-# Les données
+### Les données
 Nous créons notre fichier de données sur HDFS, en exécutant :
  
 {% highlight bash %}
@@ -53,7 +53,7 @@ echo "This is an exemple of wordcount. This is an exemple of wordcount." | hadoo
 
 Nous allons donc appliquer **Wordcount** sur le court paraphrage <<This is an exemple of wordcount. This is an exemple of wordcount.>>.
  
-# Algorithme R pour Wordcount
+### Algorithme R pour Wordcount
 Notre script R ressemble à ceci :
  
 {% highlight r %}
@@ -67,7 +67,7 @@ close(f)
  
 Nous avons besoin de créer le fichier <wc.r> avec `touch wc.r` ; puis l’éditer avec `nano wc.r`. Nous copions et collons simplement le code dans l’éditeur nano ; ici vous n'êtes pas tenu d'utiliser nano. Une fois le script collé, quitter en sauvegardant les modifications (avec nano, faire <ctrl + x> et confirmer les changements).
  
-# Traitement distribué
+### Traitement distribué
 Pour procéder au traitement des données, exécuter : 
  
 {% highlight bash %}
@@ -80,7 +80,7 @@ hadoop jar ${HADOOP_PREFIX}/share/hadoop/tools/lib/hadoop-streaming*.jar \
 -file wc.r
 {% endhighlight %}
  
-# Résultats
+### Résultats
 Le rendu du traitement sera enregistré dans le fichier <wc-r.result> tel qu’indiqué, et nous pouvons le voir, en faisant : 
  
 {% highlight bash %}
@@ -89,7 +89,7 @@ hadoop fs -cat /wc-r.result/*
 
 ![]({{ site.url }}/assets/images/posts/Du-traitement-distribue-de-donnes-sur-Hadoop-en-utilisant-R/wordcount-r.PNG)
 
-# Résultats avec Java
+### Résultats avec Java
  
 Une façon de vérifier que le script R fait du bon travail, est de faire la même démarche en utilisant cette fois-ci le jar de Wordcount, fourni avec toutes les installations Apache Hadoop. Pour ce faire, exécuter ceci :
  

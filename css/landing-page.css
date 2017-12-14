@@ -22,6 +22,14 @@ h6 {
     
 }
 
+.bloglist {
+	padding: 0 5%;
+}
+
+.bloglist > .item {
+	font-size: 17px;
+}
+
 .lead {
     font-size: 17px;
     font-weight: 300;
@@ -100,7 +108,7 @@ h6 {
     padding: 50px 0;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
-}
+} 
 
 .section-heading {
     margin-bottom: 30px;
