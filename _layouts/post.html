@@ -2,7 +2,6 @@
 layout: default
 ---
 <!-- Header -->
-
 {% if page.background %}
 <div class="intro-header" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
 {% else %}
@@ -21,14 +20,13 @@ layout: default
 			</div>
 		</div>
 	</div>
-	<!-- /.container -->
 </div>
 
-<!-- /.intro-header letter-spacing: 2px;-->
+<!-- letter-spacing: 2px;-->
 
 <div class="content-section-b">
-	<div class="container">
-    	<div style="text-align: left;font-size: 16px;font-weight: 400;line-height: 25px;">
+	<div class="container" style="padding: 0 150px;">
+    	<div style="text-align: left;font-size: 17px;font-weight: 300;line-height: 25px;">
 			{{ content }}
 		</div>
 	</div>
