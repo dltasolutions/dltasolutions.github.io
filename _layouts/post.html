@@ -8,23 +8,19 @@ layout: default
 <div class="intro-header" style="background-color: black">
 {% endif %}
 	<div class="container">
-		<div class="row">
-			<div>
-				<div class="intro-message">
-					<h2 class="">{{ page.title }}</h2>
-					<br>
-					{{ page.date | date: '%d %b %Y' }} &#8729; <span class="meta"><a href="#">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a></span>
-				</div>
-			</div>
+		<div class="intro-message">
+			<h2 class="">{{ page.title }}</h2>
+			<br>
+			{{ page.date | date: '%d %b %Y' }} &#8729; <span class="meta"><a href="#">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a></span>
 		</div>
 	</div>
 </div>
 
-<!-- letter-spacing: 2px;-->
 
+<!-- Content -->
 <div class="content-section-b">
-	<div class="container" style="padding: 0 5%;">
-    	<div style="text-align: left;font-size: 17px;font-weight: 300;line-height: 25px;">
+	<div class="container">
+    	<div class="post">
 			{{ content }}
 		</div>
 	</div>
