@@ -186,9 +186,5 @@ footer > .social-buttons {
 footer > .copyright {
     padding: 25px 0;
     background-color: #201a16;
-}
-
-
-p.copyright {
-    margin: 0 0 0;
+    text-align: center;
 }
