@@ -14,11 +14,11 @@ background: /img/banner-bg.jpg
 			{% assign post_list = site.posts | group_by_exp:"post", "post.date | date: '%m-%Y'" %}
 			{% for year in post_list %}
 				<div class="item">
-					<h2><time datetime="{{ year.name }}">{{ year.name | date: "%B %Y" }}</time></h2>
+					<h3><time datetime="{{ year.name }}">{{ year.name | date: "%B %Y" }}</time></h3>
 					<br>
 					{% for post in year.items %}
 						<a class="url" href="{{ site.url }}{{ post.url }}">
-							<h4 class="title">{{ post.title }}</h4>
+							<p class="title">{{ post.title }}</p>
 						</a>
 					{% endfor %}
 				</div>

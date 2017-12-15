@@ -2,7 +2,7 @@
 layout: post
 background:
 category:
-author: Youssef de Madeen Amadou
+author:
 tag:
 title: A distributed, secure and immutable ledger of records, again!
 ---
