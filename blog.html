@@ -6,9 +6,12 @@ title: Blog
 background: /img/banner-bg.jpg
 ---
 
+<script type="text/javascript">
+</script>
+
 <div class="content-section-b">
 	<div class="container">   	
-		<div class="bloglist">
+		<div class="bloglist">	
 			{% for post in site.posts %}
 				<div class="item">
 					<aside class="date"><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%B %Y" }}</time></aside>
