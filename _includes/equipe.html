@@ -1,8 +1,8 @@
 <!-- Equipe Section Content -->
 <div style="margin:10% auto; display:flex; justify-content:center;">
 	{% for member in site.equipe %}
-		<div style="margin:0 2%; border:1px solid #e7e7e7;">
-			<img src="{{ member.image | absolute_url }}" alt="{{ member.degree }}" style="border-radius: 50%; height: 300px; width: 300px;">
+		<div style="margin:0 2%; width: 40%;">
+			<img src="{{ member.image | absolute_url }}" alt="{{ member.degree }}" style="border-radius: 50%; width: 100%">
 			<div style="margin:10% 0 0; text-align:center;">
 				<strong>{{ member.name }}</strong>
 				<div>
