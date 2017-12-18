@@ -12,7 +12,8 @@ copyright: '&copy; 2017 DLTA Solutions.'
 credits: 'Site développé à partir du thème <a href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> par <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
 
 collections:
-  - sections
+- sections
+- equipe
 
 # ----------------------- #
 #    Jekyll & Plugins     #
