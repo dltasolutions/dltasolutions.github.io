@@ -1,0 +1,13 @@
+<!-- Homepage Sections Content -->
+{% for section in site.sections %}
+	<section id="{{ section.tag }}">
+		<div class="content-section-b">
+			<div class="container">
+				<div>
+					<h2 class="section-heading">{{ section.title }}</h2>
+					<div class="lead">{{ section.content }}</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endfor %}
