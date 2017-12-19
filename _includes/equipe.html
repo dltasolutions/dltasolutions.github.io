@@ -1,13 +1,10 @@
 <!-- Equipe Section Content -->
-<div style="margin:10% 0; display:flex; justify-content:center;">
+<div style="display: flex;flex-direction: row;justify-content: center; font-size: 13px;">
 	{% for member in site.equipe %}
-		{% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-		{% if thecycle == 'odd' %}
-    		<div style="margin:0 10% 0 0 ; width: 40%;">
-    	{% else %}
-    		<div style="margin:0 0 0 10%; width: 40%;">
- 		{% endif %}
-			<img src="{{ member.image | absolute_url }}" alt="{{ member.degree }}" style="border-radius: 50%; width: 100%">
+		<div style="margin:0; width: 50%;">
+			<div style="">
+				<img src="{{ member.image | absolute_url }}" alt="{{ member.degree }}" style="border-radius: 50%; width: 70%; display:block; margin: 0 auto;">
+			</div>
 			<div style="margin:10% 0 0; text-align:center;">
 				<strong>{{ member.name }}</strong>
 				<div>
@@ -17,5 +14,3 @@
 		</div>
 	{% endfor %}
 </div>
-
-
